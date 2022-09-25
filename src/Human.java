@@ -6,10 +6,30 @@ public class Human {
     String jobTitle;
 
     Human(String name, String city, int dateOfBirth, String jobTitle) {
+
+        if(name==null){
+            System.out.println("Информация не указана");
+        }else {
         this.name = name;
-        this.city = city;
-        this.dateOfBirth = dateOfBirth;
-        this.jobTitle = jobTitle;
+        }
+
+        if(city==null){
+            System.out.println("Информация не указана");
+        }else {
+            this.city = city;
+        }
+
+        if (dateOfBirth<0){
+            dateOfBirth=0;
+        }else {
+            this.dateOfBirth = dateOfBirth;
+        }
+
+        if(jobTitle==null){
+            System.out.println("Информация не указана");
+        }else {
+            this.jobTitle = jobTitle;
+        }
     }
 
 

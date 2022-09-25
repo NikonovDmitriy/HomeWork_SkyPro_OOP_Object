@@ -10,7 +10,7 @@ public class Main {
         Human human3 = new Human("Екатерина", "Калининград", 28, "продакт-менеджер");
         human3.people();
 
-        Human human4 = new Human("Артем", "Москва", 27, "директор по развитию бизнеса");
+        Human human4 = new Human(null, "Москва", 27, "директор по развитию бизнеса");
         human4.people();
     }
 }
