@@ -5,6 +5,13 @@ public class Human {
     String city;
     String jobTitle;
 
+    Human(String name, String city, int dateOfBirth, String jobTitle) {
+        this.name = name;
+        this.city = city;
+        this.dateOfBirth = dateOfBirth;
+        this.jobTitle = jobTitle;
+    }
+
 
 
     void people() {
