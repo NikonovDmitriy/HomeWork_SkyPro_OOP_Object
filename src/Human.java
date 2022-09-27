@@ -7,6 +7,7 @@ public class Human {
 
     public Human(String name, String city, int dateOfBirth, String jobTitle) {
 
+
         this.name = name == null ? "Информация не указана" : name;
 
         this.city = city == null ? "Информация не указана" : city;
