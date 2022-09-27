@@ -1,7 +1,7 @@
 public class Human {
 
     private final String name;
-    private int dateOfBirth;
+    private final int dateOfBirth;
     private final String city;
     private final String jobTitle;
 
@@ -12,7 +12,7 @@ public class Human {
         this.city = city == null ? "Информация не указана" : city;
 
         if (dateOfBirth < 0) {
-            dateOfBirth = 0;
+            this.dateOfBirth = 0;
         } else {
             this.dateOfBirth = dateOfBirth;
         }
