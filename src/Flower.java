@@ -60,6 +60,10 @@ public class Flower {
         this.cost = cost == 0 || cost < 0 ? 1 : cost;
     }
 
+    public Integer getLifeSpan() {
+        return lifeSpan;
+    }
+
     public void setLifeSpan(Integer lifeSpan) {
         this.lifeSpan = lifeSpan == null || lifeSpan < 0 ? 3 : lifeSpan;
     }
