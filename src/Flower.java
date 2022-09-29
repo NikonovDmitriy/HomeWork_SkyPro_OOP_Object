@@ -68,7 +68,7 @@ public class Flower {
         this.lifeSpan = lifeSpan == null || lifeSpan < 0 ? 3 : lifeSpan;
     }
 
-    void infoFlower() {
+    public void infoFlower() {
         System.out.println(name + ", страна происхождения - " + country + ", стоимость штуки - " + cost + " рублей, срок стояния - " + lifeSpan + " день.");
     }
 
