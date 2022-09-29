@@ -12,5 +12,7 @@ public class Main {
 
         Human human4 = new Human(null, "Москва", 27, "директор по развитию бизнеса");
         human4.people();
+
+        Human human5 = new Human("Владимир", "Казань", 21, "нигде не работает");
     }
 }

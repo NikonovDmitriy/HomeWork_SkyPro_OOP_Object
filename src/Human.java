@@ -1,9 +1,50 @@
 public class Human {
 
-    private final String name;
-    private final int dateOfBirth;
-    private final String city;
-    private final String jobTitle;
+    private String name;
+    private Integer dateOfBirth;
+    private String city;
+    private String jobTitle;
+
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Integer getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public void setDateOfBirth(Integer dateOfBirth) {
+        if(dateOfBirth<0 && dateOfBirth==null) {
+            this.dateOfBirth = 0;
+        }else {
+            this.dateOfBirth = dateOfBirth;
+        }
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        if (city==null || city.isEmpty()){
+            this.city = "Информация не указана";
+        }else {
+            this.city = city;
+        }
+    }
+
+    public String getJobTitle() {
+        return jobTitle;
+    }
+
+    public void setJobTitle(String jobTitle) {
+        this.jobTitle = jobTitle;
+    }
 
     public Human(String name, String city, int dateOfBirth, String jobTitle) {
 
