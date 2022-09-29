@@ -9,33 +9,36 @@ public class Flower {
 
     public Flower(String name, String country, double cost, Integer lifeSpan) {
         this.name = name;
-        this.country = country;
-        this.cost = cost;
-        this.lifeSpan = lifeSpan;
+        this.country = country == null || country.isEmpty() || country.isBlank() ? "Россия" : country;
+        this.cost = cost <= 0 ? 1 : cost;
+        this.lifeSpan = lifeSpan == null || lifeSpan < 0 ? 3 : lifeSpan;
     }
 
     public Flower(String name, double cost, Integer lifeSpan) {
         this.name = name;
-        this.cost = cost;
-        this.lifeSpan = lifeSpan;
+        this.cost = cost <= 0 ? 1 : cost;
+        this.lifeSpan = lifeSpan == null || lifeSpan < 0 ? 3 : lifeSpan;
     }
 
     public Flower(String name, String country, double cost) {
         this.name = name;
-        this.country = country;
-        this.cost = cost;
+        this.country = country == null || country.isEmpty() || country.isBlank() ? "Россия" : country;
+        this.cost = cost <= 0 ? 1 : cost;
     }
 
 
     public String getName() {
+
         return name;
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 
     public String getFlowerColor() {
+
         return flowerColor;
     }
 
@@ -45,6 +48,7 @@ public class Flower {
     }
 
     public String getCountry() {
+
         return country;
     }
 
@@ -57,7 +61,8 @@ public class Flower {
     }
 
     public void setCost(double cost) {
-        this.cost = cost == 0 || cost < 0 ? 1 : cost;
+
+        this.cost = cost <= 0 ? 1 : cost;
     }
 
     public Integer getLifeSpan() {
@@ -65,6 +70,7 @@ public class Flower {
     }
 
     public void setLifeSpan(Integer lifeSpan) {
+
         this.lifeSpan = lifeSpan == null || lifeSpan < 0 ? 3 : lifeSpan;
     }
 

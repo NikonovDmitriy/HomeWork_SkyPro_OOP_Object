@@ -19,9 +19,9 @@ public class Human {
     }
 
     public void setDateOfBirth(Integer dateOfBirth) {
-        if(dateOfBirth<0 && dateOfBirth==null) {
+        if (dateOfBirth < 0 && dateOfBirth == null) {
             this.dateOfBirth = 0;
-        }else {
+        } else {
             this.dateOfBirth = dateOfBirth;
         }
     }
@@ -31,9 +31,9 @@ public class Human {
     }
 
     public void setCity(String city) {
-        if (city==null || city.isEmpty()){
+        if (city == null || city.isEmpty()) {
             this.city = "Информация не указана";
-        }else {
+        } else {
             this.city = city;
         }
     }
