@@ -14,5 +14,6 @@ public class Main {
         human4.people();
 
         Human human5 = new Human("Владимир", "Казань", 21, "нигде не работает");
+        human5.people();
     }
 }

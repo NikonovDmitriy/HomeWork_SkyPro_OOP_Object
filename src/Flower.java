@@ -4,26 +4,26 @@ public class Flower {
     private String flowerColor;
     private String country;
     private double cost;
-
     Integer lifeSpan;
 
     public Flower(String name, String country, double cost, Integer lifeSpan) {
         this.name = name;
         this.country = country == null || country.isEmpty() || country.isBlank() ? "Россия" : country;
         this.cost = cost <= 0 ? 1 : cost;
-        this.lifeSpan = lifeSpan == null || lifeSpan < 0 ? 3 : lifeSpan;
+        this.lifeSpan = lifeSpan <= 0 ? 3 : lifeSpan;
     }
 
     public Flower(String name, double cost, Integer lifeSpan) {
         this.name = name;
         this.cost = cost <= 0 ? 1 : cost;
-        this.lifeSpan = lifeSpan == null || lifeSpan < 0 ? 3 : lifeSpan;
+        this.lifeSpan = lifeSpan <= 0 ? 3 : lifeSpan;
     }
 
     public Flower(String name, String country, double cost) {
         this.name = name;
         this.country = country == null || country.isEmpty() || country.isBlank() ? "Россия" : country;
         this.cost = cost <= 0 ? 1 : cost;
+        this.lifeSpan = 3;
     }
 
 
@@ -77,6 +77,8 @@ public class Flower {
     public void infoFlower() {
         System.out.println(name + ", страна происхождения - " + country + ", стоимость штуки - " + cost + " рублей, срок стояния - " + lifeSpan + " день.");
     }
+
+
 
 
     public static void main(String[] args) {
