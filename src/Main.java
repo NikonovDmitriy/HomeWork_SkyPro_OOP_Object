@@ -1,5 +1,19 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        Human human1 = new Human("Максим", "Минск", 35, "бренд-менеджер");
+        human1.people();
+
+        Human human2 = new Human("Анна", "Москва", 29, "методист образовательных программ");
+        human2.people();
+
+        Human human3 = new Human("Екатерина", "Калининград", 28, "продакт-менеджер");
+        human3.people();
+
+        Human human4 = new Human(null, "Москва", 27, "директор по развитию бизнеса");
+        human4.people();
+
+        Human human5 = new Human("Владимир", "Казань", 21, "нигде не работает");
+        human5.people();
     }
 }
