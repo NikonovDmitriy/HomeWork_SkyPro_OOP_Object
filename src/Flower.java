@@ -8,7 +8,7 @@ public class Flower {
 
     public Flower(String name, String country, double cost, Integer lifeSpan) {
         this.name = name;
-        this.country = country == null || country.isEmpty() || country.isBlank() ? "Россия" : country;
+        this.country = country == null || country.isBlank() ? "Россия" : country;
         this.cost = cost <= 0 ? 1 : cost;
         this.lifeSpan = lifeSpan <= 0 ? 3 : lifeSpan;
     }
@@ -21,7 +21,7 @@ public class Flower {
 
     public Flower(String name, String country, double cost) {
         this.name = name;
-        this.country = country == null || country.isEmpty() || country.isBlank() ? "Россия" : country;
+        this.country = country == null || country.isBlank() ? "Россия" : country;
         this.cost = cost <= 0 ? 1 : cost;
         this.lifeSpan = 3;
     }
@@ -44,7 +44,7 @@ public class Flower {
 
     public void setFlowerColor(String flowerColor) {
 
-        this.flowerColor = flowerColor == null || flowerColor.isEmpty() || flowerColor.isBlank() ? "белый" : flowerColor;
+        this.flowerColor = flowerColor == null || flowerColor.isBlank() ? "белый" : flowerColor;
     }
 
     public String getCountry() {
@@ -53,7 +53,7 @@ public class Flower {
     }
 
     public void setCountry(String country) {
-        this.country = country == null || country.isEmpty() || country.isBlank() ? "Россия" : country;
+        this.country = country == null || country.isBlank() ? "Россия" : country;
     }
 
     public double getCost() {

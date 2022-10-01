@@ -19,7 +19,7 @@ public class Human {
     }
 
     public void setDateOfBirth(Integer dateOfBirth) {
-        if (dateOfBirth < 0 && dateOfBirth == null) {
+        if (dateOfBirth == null && dateOfBirth < 0) {
             this.dateOfBirth = 0;
         } else {
             this.dateOfBirth = dateOfBirth;
